@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  title:string = 'Nuesta Lista de Tareas';
+  title:string = 'My Task List';
+
+  constructor() { };
+
+  ngOnInit(): void {
+};
+
+toggleAddTask():void{
+  console.log('toggleAddTask');
+}
+
 }
